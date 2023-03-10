@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="gameContainer">
+        <div class="winnerStatus">
+            <div class="playerWon">You Won</div>
+            <div class="computerWon">Computer Won</div>
+            <button class="playAgainBtn">Play Again</button>
+        </div>
+        <div class="playerFleet">
+            <div class="header">YOUR FLEET</div>
+            <div class="playerGameBoard">
+                <div></div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+                <div>E</div>
+                <div>F</div>
+                <div>G</div>
+                <div>H</div>
+                <div>I</div>
+                <div>J</div>
+                <div>1</div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"> </div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div>2</div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div>3</div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div>4</div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div>5</div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div>6</div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div>7</div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div>8</div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div>9</div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div>10</div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+                <div class="gameBox"></div>
+            </div>
+            <div class="shipyardContainer">
+                <button class="startGameBtn">Start Game</button>
+                <button class="rotate">ROTATE</button>
+                <div class="shipyard">
+                    <div class="selectShips" id="0">cruiser(2)</div>
+                    <div class="selectShips" id="1">submarine(3)</div>
+                    <div class="selectShips" id="2">destroyer(3)</div>
+                    <div class="selectShips" id="3">battleship(4)</div>
+                    <div class="selectShips" id="4">carrier(5)</div>
+                </div>
+            </div>
+            <div class="playerShipyardContainer">
+                <div>Your Fleet Status</div>
+                <div class="shipyard">
+                    <div class="playerShipStatus">cruiser(2)</div>
+                    <div class="playerShipStatus">submarine(3)</div>
+                    <div class="playerShipStatus">destroyer(3)</div>
+                    <div class="playerShipStatus">battleship(4)</div>
+                    <div class="playerShipStatus">carrier(5)</div>
+                </div>
+            </div>
+        </div>
+        <div class="opponentFleet">
+            <div class="header">OPPONENT</div>
+            <div class="playerGameBoard">
+                <div></div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+                <div>E</div>
+                <div>F</div>
+                <div>G</div>
+                <div>H</div>
+                <div>I</div>
+                <div>J</div>
+                <div>1</div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div>2</div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div>3</div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div>4</div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div>5</div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div>6</div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div>7</div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div>8</div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div>9</div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div>10</div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+                <div class="gameBox2"></div>
+            </div>
+            <div class="ComputerShipyardContainer">
+                <div>Computer Fleet Status</div>
+                <div class="shipyard">
+                    <div class="computerShipStatus">cruiser(2)</div>
+                    <div class="computerShipStatus">submarine(3)</div>
+                    <div class="computerShipStatus">destroyer(3)</div>
+                    <div class="computerShipStatus">battleship(4)</div>
+                    <div class="computerShipStatus">carrier(5)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

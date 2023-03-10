@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gameContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.playerFleet {
+    background-color: white;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.opponentFleet {
+    background-color: white;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.playerGameBoard {
+    width: 46vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 3px;
+    color: grey;
+    font-weight: 800;
+}
+
+.playerGameBoard>div {
+    text-align: center;
+}
+
+.gameBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(135, 206, 235, 0.5);
+    cursor: pointer;
+}
+
+.gameBox2 {
+    background-color: rgb(128, 128, 128, 0.5);
+    cursor: pointer;
+}
+
+
+.shipyardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+.shipyard {
+    display: flex;
+    width: 80%;
+    height: 150px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: gray;
+    font-weight: 800;
+}
+
+.shipyard>div {
+    min-width: 100px;
+    min-height: 40px;
+}
+
+.playerFleet>.header {
+    width: 100%;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.opponentFleet>.header {
+    width: 100%;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(82, 81, 81);
+    color: white;
+    letter-spacing: 4px;
+}
+
+.selectShips{
+    cursor: pointer;
+}
+
+.designShip {
+    background-color: yellow;
+}
+
+.hover {
+    background-color: rgb(255, 0, 0, 0.4);
+}
+
+.startGameBtn {
+    display: none;
+}
+
+.rotate,
+.startGameBtn {
+    width: 50%;
+    height: 45px;
+    margin-left: 25%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+.reduce {
+    display: none;
+    pointer-events: none;
+}
+
+.playerShipyardContainer {
+    display: none;
+}
+
+.ComputerShipyardContainer {
+    opacity: 0;
+}
+
+
+.ComputerShipyardContainer>div:first-child,
+.playerShipyardContainer>div:first-child {
+    width: 50%;
+    height: 45px;
+    margin-left: 25%;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-decoration: underline;
+}
+.redShip {
+    background-color: red;
+}
+
+.blackShip {
+    background-color: black;
+}
+
+.computerShipsUpdate {
+    display: flex;
+
+}
+
+.winnerStatus>div {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.winnerStatus {
+    position: absolute;
+    width: 50%;
+    height: 30%;
+    bottom: 50%;
+    left: 25%;
+    background-color: lightblue;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.winnerStatus>button {
+    font-size: 20px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    height: 40px;
+    border: none;
+}
+
+.sunk {
+    opacity: 0.5;
+    text-decoration: line-through;
+    color: red;
+}
+
+.computerWon {
+    display: none;
+}
+
+.playerWon {
+    display: none;
+}
+
+@media(max-width:800px) {
+    .gameContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .playerGameBoard {
+        width: 98vw;
+    }
+}

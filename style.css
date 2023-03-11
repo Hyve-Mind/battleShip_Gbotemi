@@ -185,7 +185,7 @@ body {
     bottom: 50%;
     left: 25%;
     background-color: lightblue;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -215,6 +215,12 @@ body {
 }
 
 @media(max-width:800px) {
+    .winnerStatus{
+        left: 10%;
+        width: 90%;
+        height: 40%;
+
+    }
     .gameContainer {
         grid-template-columns: 1fr;
     }

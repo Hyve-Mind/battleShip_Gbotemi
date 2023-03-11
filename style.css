@@ -185,7 +185,7 @@ body {
     bottom: 50%;
     left: 25%;
     background-color: lightblue;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
